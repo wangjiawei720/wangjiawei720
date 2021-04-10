@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <style>
+
+ul{list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333; }
+
+      li{float: left;}
+      li a{
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 25px 25px;
+          text-decoration: teal;
+      }
+
+      li a :hover{
+          background-color: rgb(92, 243, 185);
+      }
+      .active {background-color: rgb(106, 175, 172);}
+    .dropbtn {
+  background-color:rgb(46, 181, 190);
+  color: white;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #30555c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(112, 190, 105, 0.2);
+ z-index: 101; position: relative;
+ }
+
+.dropdown-content a {
+  color: rgb(8, 5, 5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #a8aeeb}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #e7abdf;
+}
+
+          
+          input{position: absolute;
+          border-radius: 10px;
+          margin-top: 20%;
+          margin-left: 40%;
+          width: 500px; height: 50px;}
+          
+         
+ </style>
+
+        </head>
+       <BODY background="背景图.png" BODY>
+        <div>
+        <ul>
+            <li><a href="#home" class="active">主页</a>></li>
+            <li><a href="#news">说明</a>></li>
+            <li><a href="#contact">介绍</a>></li>
+            <div class="dropdown">
+             <button class="dropbtn">联系我们</button>
+             
+             <div class="dropdown-content">
+               <a href="">QQ：573728978</a>
+               <a href="">电话：15990177837</a>
+             </div>
+           </div>
+            
+        </ul>
+       <input type="text" placeholder="搜索..">
+        </body>
+        </html>
